@@ -1,0 +1,11 @@
+{
+  "name": "milky.flowers",
+  "description": "Zoë Sparks's art/personal website.",
+  "authors": [
+    "Zoë Sparks"
+  ],
+  "dependencies": {
+    "foundation": ">=5.0"
+  },
+  "private": "true"
+}
