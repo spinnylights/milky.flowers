@@ -1508,3 +1508,22 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -50%);
 .poem {
   white-space: nowrap !important;
 }
+
+.poems {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.floral-heart {
+  color: scale-color(pink, $lightness: -8%);
+}
+
+img {
+  max-width: none !important;
+}
+
+// 39. Index
+
+.dingbats-index {
+  font-size: rem-calc(105);
+}

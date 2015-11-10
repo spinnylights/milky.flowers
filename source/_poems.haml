@@ -1,0 +1,18 @@
+- current_page.data.sections.each do |s_name, pieces|
+  .row
+    .small-10.large-7.small-centered.columns
+      %h1.text-center= s_name
+  - pieces.each do |name, contents|
+    .row.poems
+      .small-11.large-8.columns
+        .section
+          .row
+            .small-11.large-9.small-centered.columns
+              %h3= name
+            .row
+              .small-10.large-7.small-centered.columns
+                %p 
+                  :markdown
+                    #{contents['description']}
+                %p
+                  = contents["media_tag"]
