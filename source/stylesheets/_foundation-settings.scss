@@ -48,6 +48,7 @@
 // 34. Top Bar
 // 36. Visibility Classes
 // 37. Logo
+// 38. Poems
 
 // a. Base
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1501,3 +1502,9 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -50%);
 }
 // FFA789
 // FE906C
+
+// 38. Poems
+
+.poem {
+  white-space: nowrap !important;
+}
