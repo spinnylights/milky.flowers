@@ -4,10 +4,15 @@
       %h1.text-center= s_name
   - pieces.each do |name, contents|
     .row
-      .small-10.large-7.small-centered.columns
+      .small-11.large-9.small-centered.columns
         .section
-          %h3= name
-          %p 
-            :markdown
-              #{contents['description']}
-          = if contents["media_tag"] != 'empty' then contents["media_tag"] end
+          .row
+            .small-11.large-9.small-centered.columns
+              %h3= name
+            .row
+              .small-10.large-7.small-centered.columns
+                %p 
+                  :markdown
+                    #{contents['description']}
+                %p
+                  = contents["media_tag"]
