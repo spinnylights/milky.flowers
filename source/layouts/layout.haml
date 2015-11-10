@@ -6,8 +6,29 @@
     / Always force latest IE rendering engine or request Chrome Frame
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title || "milky flowers"
     = stylesheet_link_tag "app"
-    = javascript_include_tag "all"
-  %body{:class => page_classes}
+  %body
+    %nav.top-bar{role: "navigation", data: {topbar: true}}
+      %ul.title-area
+        %li.name
+          %h1.logo
+            = link_to 'milky ❀ flowers', '/', class: 'logo'
+        %li.toggle-topbar.menu-icon
+          %a{href: "#"}
+            %span Menu
+      %section.top-bar-section
+        %ul.left
+          %li.active
+            = link_to 'about', '/about'
+        %ul.right
+          %li
+            = link_to 'programs', '/programs'
+          %li
+            = link_to 'music', '/music'
+          %li
+            = link_to 'writing', '/writing'
+
     = yield
+
+    = javascript_include_tag "all"
