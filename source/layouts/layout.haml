@@ -19,15 +19,15 @@
             %span Menu
       %section.top-bar-section
         %ul.left
-          %li.active
-            = link_to 'about', '/about'
+          = nav_link_li 'about'
+          = link_to 'about', '/about'
         %ul.right
-          %li
-            = link_to 'programs', '/programs'
-          %li
-            = link_to 'music', '/music'
-          %li
-            = link_to 'writing', '/writing'
+          = nav_link_li 'programs'
+          = link_to 'programs', 'programs.html'
+          = nav_link_li 'music'
+          = link_to 'music', '/music'
+          = nav_link_li 'writing'
+          = link_to 'writing', '/writing'
 
     = yield
 

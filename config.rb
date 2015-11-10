@@ -32,6 +32,17 @@ end
 # Helpers
 ###
 
+helpers do
+  def nav_link_li(url)
+    if current_page.url.include? url
+      tag :li, class: 'active'
+    else
+      tag :li
+    end
+  end
+end
+
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
