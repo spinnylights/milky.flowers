@@ -1,0 +1,13 @@
+- current_page.data.sections.each do |s_name, pieces|
+  .row
+    .small-7.small-centered.columns
+      %h1.text-center= s_name
+  - pieces.each do |name, contents|
+    .row
+      .small-7.small-centered.columns
+        .section
+          %h3= name
+          %p 
+            :markdown
+              #{contents['description']}
+          = if contents["media_tag"] != 'empty' then contents["media_tag"] end
