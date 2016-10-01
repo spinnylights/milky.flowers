@@ -8,7 +8,11 @@
         .section
           .row
             .small-11.large-9.small-centered.columns
-              %h3= name
+              - if name == "constat"
+                %p= image_tag 'conservation_status_title.png'
+                %p= contents['subtitle']
+              - else
+                %h3= name
             .row
               .small-10.large-7.small-centered.columns
                 %p 
