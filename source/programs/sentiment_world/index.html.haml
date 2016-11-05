@@ -1,0 +1,22 @@
+.row
+  .small-10.large-7.small-centered.columns
+    %h1.text-center Sentiment World
+.row
+  .small-10.medium-7.large-6.small-centered.columns
+    %p In this piece, which acts as a sort of operating system for a computer, pressing buttons on the keyboard causes words to appear on the screen and sounds to play. The words are cut-up phrases from all of the text files on my computer (except boring text like system logs and things) from 2006–2015 (I lost nearly all my data from prior to that). The sounds are taken from all the recordings I could find on my computer and phone from the same period.
+    %p There's a lot of different kinds of text in the corpus—diary, essay, fiction, poetry, transcription of my friends, dream, and so on. The period the corpus is pulled from covers some of the most traumatic and fraught periods of my life—there's a suicide note in it, for instance. 2006–2010 were the years I was in college, which contributed to the stress I was under. However, there was a more dire contributing factor. By coincidence, this piece neatly covers the period when I first started coming out to myself as trans in 2007, when I was 17, to just before I came out to the world, at 25.
+    %p
+      I originally made this piece for a show called <a href="https://www.fuseboxfestival.com/festival/the-institute-of-desktop-archeology">The Institute of Desktop Archeology</a>,  curated by <a href="http://katierosepipkin.com/">Katie Rose Pipkin</a>, at the <a href="http://themuseumofhumanachievement.com/">Museum of Human Achievement</a>, as part of <a href="https://www.fuseboxfestival.com/">Fusebox Festival</a>. Each artist in the show was supplied with a computer; the focus of the show was on the personality and atmosphere that computers naturally develop through use. So, this originally ran on a dedicated laptop. However, I developed the piece in a virtual machine, and if you want to experience what it's like you can download and run the VM yourself.
+    %ol
+      %li
+        Download the <a href="/sentiment_world.ova">packaged VM</a>. You'll also need to install <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> if you don't have it already, so you have something to run the VM in.
+      %li
+        Run VirtualBox. Go to File ➔ Import Appliance…
+      %li
+        Click the folder icon to the right of the textbox and navigate to where you downloaded the VM package (it's called sentiment_world.ova). Click the "Next" button, then "Import" on the next screen. A progress bar will appear as VirtualBox imports the package. You can delete the .ova file afterwards to save space, if you'd like.
+      %li
+        A VM called "Sentiment World" will appear in the VM list on the left side of the window. Click on it to select it, then click the "Start" button at the top left. The VM will go through a short boot process.
+    %p
+      To use, press buttons on the keyboard. As a general rule, the keys further to left on the keyboard will play longer sounds, while the keys further to the right will play shorter ones. Some of the keys don't play sound at all (like the number keys) so you can press those if you want more text without sound. Pressing the spacebar washes everything away, leaving you with a clean slate. Press a key at any time during this to return to the main screen immediately.
+    %p When you're finished, just close the window the VM is running in, or right-click its entry in the VM list, and select "ACPI Shutdown".
+    %p <a href="mailto:zoe@milky.flowers">Email me</a> if you run into problems or have any questions. Enjoy!
