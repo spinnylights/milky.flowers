@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>milky flowers</title>
+    <link href="/stylesheets/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class='top-bar' data-topbar role='navigation'>
+      <ul class='title-area'>
+        <li class='name'>
+          <h1 class='logo'>
+            <a class="logo" href="/">milky ❀ flowers</a>
+          </h1>
+        </li>
+        <li class='toggle-topbar menu-icon'>
+          <a href='#'>
+            <span>Menu</span>
+          </a>
+        </li>
+      </ul>
+      <section class='top-bar-section'>
+        <ul class='left'>
+          <li />
+          <a href="/about.html">about</a>
+        </ul>
+        <ul class='right'>
+          <li class="active" />
+          <a href="/programs">programs</a>
+          <li />
+          <a href="/music.html">music</a>
+          <li />
+          <a href="/writing.html">writing</a>
+        </ul>
+      </section>
+    </nav>
+    <div class='row'>
+      <div class='small-10 large-7 small-centered columns'>
+        <h1 class='text-center'>Scissors</h1>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-9 large-6 small-centered columns'>
+        <textarea cols='100' id='to-cut-up' placeholder='Write or paste text to be cut up here' rows='10'></textarea>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <p></p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-9 small-centered columns'>
+        <div id='cut-up-methods'>
+          <ul class='small-block-grid-1 large-block-grid-2'>
+            <li><input id='rev-words' type='checkbox'><label class='inline' for='rev-words'>Reverse words</label>
+            </li>
+            <li>
+              <input id='shuf-words' type='checkbox'>
+              <label class='inline' for='shuf-words'>Shuffle words</label>
+            </li>
+            <li>
+              <input id='rev-lines' type='checkbox'>
+              <label class='inline' for='rev-lines'>Reverse lines</label>
+            </li>
+            <li>
+              <input id='shuf-lines' type='checkbox'>
+              <label class='inline' for='shuf-lines'>Shuffle lines</label>
+            </li>
+            <li>
+              <input id='bur-spl' type='checkbox'>
+              <label class='inline' for='bur-spl'>Burroughs-Gysin (ignore word breaks)</label>
+            </li>
+            <li>
+              <input id='bur-wrd' type='checkbox'>
+              <label class='inline' for='bur-wrd'>Burroughs-Gysin (preserve word breaks)</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-2 small-centered text-center columns'>
+        <a class='button' href='#run-cut-up' id='run-cut-up'>✂</a>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-9 large-6 small-centered columns'>
+        <textarea cols='100' id='cut-up-text' rows='30'></textarea>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+    <script src="/javascripts/all.js"></script>
+  </body>
+</html>
